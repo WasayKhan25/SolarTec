@@ -4,7 +4,7 @@ import { Sun, Leaf } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden bg-zinc-900 text-white font-sans flex flex-col">
-      <div className="absolute inset-0 z-0 bg-[url(/images/hero.png)] bg-cover bg-center saturate-150">
+      <div className="absolute inset-0 z-0 bg-[url(/images/hero.webp)] bg-cover bg-center saturate-150">
         <div className="absolute inset-0 bg-gradient-to-br from-black/30 to-transparent z-10" />
       </div>
 
