@@ -27,26 +27,7 @@ Build Tool: Vite
 
 Package Manager: npm
 
-📂 Project Structure
-SOLARTEC/
-├── public/
-│   ├── fonts/
-│   └── images/
-├── src/
-│   ├── assets/
-│   │   └── data.js 
-│   ├── components/
-│   │   ├── Hero.jsx 
-│   │   ├── Navigation.jsx 
-│   │   ├── ProductShowcase.jsx 
-│   │   ├── Services.jsx 
-│   │   ├── More.jsx 
-│   │   └── Footer.jsx
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── index.html
+
 ├── package.json
 ├── vite.config.js
 └── README.md
