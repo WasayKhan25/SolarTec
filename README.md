@@ -26,8 +26,3 @@ Icons: Lucide React
 Build Tool: Vite
 
 Package Manager: npm
-
-
-├── package.json
-├── vite.config.js
-└── README.md
