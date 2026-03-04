@@ -28,8 +28,6 @@ Build Tool: Vite
 Package Manager: npm
 
 📂 Project Structure
-Plaintext
-
 SOLARTEC/
 ├── public/
 │   ├── fonts/
