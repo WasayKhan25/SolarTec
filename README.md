@@ -1,6 +1,7 @@
 url : https://solar-tec.vercel.app
 
-SolarTec | Premium Solar Solutions
+SolarTec 
+
 A modern and responsive SolarTec landing page built using React JS and Tailwind CSS. This project replicates a high-end, industry inspired UI/UX, focusing on clean aesthetics,and fluid motion.
 
 🚀 Features
