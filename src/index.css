@@ -1,0 +1,124 @@
+/* FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Inter:wght@400;700&family=Bebas+Neue&family=Poppins:ital,wght@0,100..900;1,100..900&family=Cookie&display=swap");
+
+/* Tailwind V4.0 */
+@import "tailwindcss";
+
+/* THEME CUSTOMIZATION */
+@theme {
+  /* Brand Colors */
+  --color-prime-accent: #dfff3b;
+  --color-prime-white: #fff4e9;
+  --color-prime-blue: #1b6e9d;
+  --color-prime-dark: #121212;
+  --color-sec-dark: #0b0b0b;
+
+  /* Typography */
+  --font-helvetica: "helvetica", sans-serif;
+  --font-space: "space", sans-serif;
+
+  /* Effects */
+  --drop-shadow-3xl: 0 35px 35px rgba(0, 0, 0, 0.25);
+
+  /* Animations */
+  --animate-wiggle: wiggle 2s ease-out infinite;
+  --animate-border: border 5s linear infinite;
+  --animate-scroll: scroll 40s linear infinite;
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+
+  @keyframes border {
+    0% { border-color: rgb(56, 189, 248); }
+    50% { border-color: rgb(236, 72, 153); }
+    75% { border-color: #adfe02; }
+    100% { border-color: rgb(56, 189, 248); }
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+/* CUSTOM FONTS */
+@font-face {
+  font-family: "helvetica";
+  src: url(/fonts/Helvetica.ttf);
+}
+@font-face {
+  font-family: "space";
+  src: url(/fonts/SpaceGrotesk.ttf);
+}
+
+/* BASE STYLES */
+* {
+  font-family: "helvetica", "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "space", sans-serif;
+}
+
+/* UTILITIES */
+@utility centered-row {
+  display: flex;
+  align-items: center;
+}
+
+@utility mirror-x {
+  transform: scaleX(-1);
+}
+
+/* COMPONENTS */
+@layer components {
+  .btn-hover {
+    @apply hover:bg-transparent hover:border hover:border-zinc-600 transition-all duration-300;
+  }
+
+  .heading-2 {
+    @apply text-6xl lg:text-9xl uppercase leading-tight mb-12 font-space;
+  }
+
+  .glass {
+    @apply bg-[#0A0A0A]/80 border border-white/10 backdrop-blur-md;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-2 transition-all duration-300 cursor-pointer ease-out;
+  }
+
+  .grad-text {
+    @apply text-transparent bg-gradient-to-tr bg-clip-text;
+  }
+
+  .animate-marquee {
+    display: flex;
+    animation: marquee 150s linear infinite;
+  }
+}
+
+/* MARQUEE KEYFRAMES */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); } /* Adjusted for better logic */
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 380px) {
+  .test { font-size: 75px; }
+  .something {
+    font-size: 16px;
+    width: 340px;
+    position: absolute;
+    bottom: -380px;
+    left: 5px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-img { width: 1024px; }
+}
