@@ -25,4 +25,25 @@ Icons: Lucide React
 
 Build Tool: Vite
 
+SOLAR/
+├── public/                 
+├── src/
+│   ├── assets/             
+│   │   └── data.jsx        
+│   ├── components/         
+│   │   ├── About.jsx       
+│   │   ├── Footer.jsx      
+│   │   ├── Hero.jsx        
+│   │   ├── More.jsx        
+│   │   ├── Navigation.jsx  
+│   │   ├── ProductShowcase.jsx 
+│   │   └── Services.jsx    
+│   ├── App.jsx             
+│   ├── index.css           
+│   └── main.jsx            
+├── .gitignore              
+├── index.html              
+├── package.json            
+└── vite.config.js
+
 Package Manager: npm
